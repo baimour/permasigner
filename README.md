@@ -21,48 +21,48 @@
 </p>
 
 <p align="center">
-Permanently sign IPAs on jailbroken iDevices 14.0-14.8.1 (persists on stock)
+在 14.0-14.8.1 越狱的设备上永久签名 IPA
 </p>
 
 ---
 
-# How does it work?
-In iOS 14.0-14.8.1, there is a bug where CoreTrust will allow any root certificate. Although the bug exists on iOS 15.0-15.4.1, it can not be abused (yet) since you need to be jailbroken at first to place the app in the /Applications folder. This bug does not exist on anything older than iOS 14.
+# 它是如何工作的？
+在 iOS 14.0-14.8.1 中，CoreTrust 将允许任何根证书存在BUG。尽管该BUG存在于 iOS 15.0-15.4.1 上，但它不能被滥用（目前），因为您首先需要越狱才能将应用程序放在 /Applications 文件夹中，此BUG在 iOS 14 之前的任何设备上不存在
 
-This script makes a deb file for you based on an IPA. Tested only with Taurine, but should work with many others.
+该脚本基于 IPA 为您创建一个 deb 文件，仅使用牛磺酸进行测试，但应该可以与其他应用一起使用
 
-Based on the [resign_taurine branch of CoreTrustDemo](https://github.com/zhuowei/CoreTrustDemo/tree/resign_taurine), please note that certificates are not copyrightable.
+基于[CoreTrustDemo的resign_taurine分支](https://github.com/zhuowei/CoreTrustDemo/tree/resign_taurine)，请注意证书不具有版权
 
-**Note:** unc0ver will probably fail to jailbreak. It works for some people but not everyone.
+**注意:** unc0ver 可能无法越狱，它适用于某些人，但不是所有人
 
-# Prerequsites
-1. A computer or jailbroken iDevice with Procursus
-    - Mac OS X 10.5.0 (?) or later required.
-    - (Basically) any Linux distro is supported.
-    - A jailbroken iDevice using the Procursus bootstrap is supported.
-2. Jailbroken "target" iDevice on 14.0-14.8.1
-    - The device needs to be jailbroken at first to place the app in the /Applications folder. After installing it'll continue working on stock.
+# 前提条件
+1. 一台装有 Procursus 引导程序的电脑或越狱的设备
+    - 需要 Mac OS X 10.5.0 (?) 或更高版本
+    - (基本上)支持任何 Linux 发行版
+    - 支持使用 Procursus 引导越狱的设备
+2. 目标：已越狱的 14.0-14.8.1 设备
+    - 要将应用程序放在/Applications文件夹中，首先需要越狱设备，安装后，它将继续处理
 
-# Tutorials
-- [Run Online](https://permasigner.itsnebula.net/usage/run-online)
-- [Run in Docker](https://permasigner.itsnebula.net/usage/run-in-docker)
-- [Run on iOS](https://permasigner.itsnebula.net/usage/run-on-ios)
-- [Run on macOS](https://permasigner.itsnebula.net/usage/run-on-macos)
-- [Run on Linux](https://permasigner.itsnebula.net/usage/run-on-linux)
-- [Run on Windows](https://permasigner.itsnebula.net/usage/run-on-windows)
+# 教程
+- [在线运行] (https://permasigner.itsnebula.net/usage/run-online)
+- [在 Docker 中运行] (https://permasigner.itsnebula.net/usage/run-in-docker)
+- [在 iOS 上运行] (https://permasigner.itsnebula.net/usage/run-on-ios)
+- [在 MacOS 上运行] (https://permasigner.itsnebula.net/usage/run-on-macos)
+- [在 Linux 上运行] (https://permasigner.itsnebula.net/usage/run-on-linux)
+- [在 Windows 上运行] (https://permasigner.itsnebula.net/usage/run-on-windows)
 
-# In Progress
-View the [GitHub Projects board](https://github.com/users/itsnebulalol/projects/2/views/1)!
+# 进行中
+查看 [GitHub 项目] (https://github.com/users/itsnebulalol/projects/2/views/1)!
 
-# Credits
-- [Linus Henze](https://github.com/LinusHenze) for the bug
-- [zhuowei](https://github.com/zhuowei) for the original Taurine script
-- [RexSonic](https://github.com/RexSonic) for the fix and a lot of help
-- [verygenericname](https://github.com/verygenericname) for the ldid downloader and support
-- [superrnovae](https://github.com/superrnovae) for contributing lots of fixes and features
-- the [Procursus Team](https://github.com/ProcursusTeam) for the amazing bootstrap and the ldid fork
-- [Amy](https://github.com/elihwyma) for the Procursus with cache GitHub action from the Sileo Git repository
-- anyone who sent a pull request or issue! Your contribution helps a lot!
+# 致谢
+- [Linus Henze](https://github.com/LinusHenze) 对于BUG
+- [zhuowei](https://github.com/zhuowei) 对于原始牛磺酸脚本
+- [RexSonic](https://github.com/RexSonic) 修复和很多帮助
+- [verygenericname](https://github.com/verygenericname) 用于 ldid 下载器和支持
+- [superrnovae](https://github.com/superrnovae) 贡献了大量的修复和功能
+- [Procursus Team](https://github.com/ProcursusTeam) 令人惊叹的引导程序和 ldid 前叉
+- [Amy](https://github.com/elihwyma) 对于来自 Sileo Git 存储库的具有缓存 GitHub 操作的 Procursus
+- 任何发送拉取请求或问题的人！您的贡献有很大帮助！
 
-# Other Stuff
-- [Reddit Post](https://www.reddit.com/r/jailbreak/comments/vqnazh/free_release_permasigner_generate_a_permasigned)
+# 其他的东西
+- [Reddit 帖子](https://www.reddit.com/r/jailbreak/comments/vqnazh/free_release_permasigner_generate_a_permasigned)
